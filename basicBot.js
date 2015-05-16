@@ -181,7 +181,7 @@
     var basicBot = {
         version: "2.4.5",
         status: false,
-        name: "basicBot",
+        name: "ChatBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -191,15 +191,15 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "ChatBot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupCap: 100, // 1-200
+            startupVolume: 15, // 0-100
+            startupEmoji: true, // true or false
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -212,9 +212,9 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 10,
+            maximumSongLength: 20,
             autodisable: true,
-            commandCooldown: 30,
+            commandCooldown: 10,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
